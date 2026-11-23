@@ -73,6 +73,7 @@ VoxelGraft の設計および実装の考察で用いた標識を整理したも
 
 - 問い：1 ファイルで足りるか。外部ライブラリを用いるか。画像とするか
 - 観察事項：面の境界に細い白線が生じていた。canvas による多角形の縁の平滑化と推定。各面を同色の縁で描くことで解消（b5ec304、src/html.ts）
+- 併設：three（.vox を埋め込み、Three.js を CDN から読む）。外部ライブラリを用いる形の比較の候補
 - 関連する実装：I6
 
 ### X7：help のみによる DSL の記述 — 未着手
@@ -109,7 +110,7 @@ VoxelGraft の設計および実装の考察で用いた標識を整理したも
 | I3 | DSL の解析と形式の検査。誤りは DSL 内の位置で示す | 完了 | src/dsl.ts |
 | I4 | 操作の段 | 部分実装（fill / remove） | src/voxels.ts、src/stages.ts |
 | I5 | 検査の段 | 部分実装（bounds / palette） | src/stages.ts |
-| I6 | 書き出しの段 | 部分実装（html） | src/stages.ts、src/html.ts |
+| I6 | 書き出しの段 | 部分実装（html / vox / three） | src/stages.ts、src/html.ts、src/vox.ts、src/three.ts |
 | I7 | 結果の形式 | 暫定（JSON） | src/result.ts |
 | I8 | help および SKILL.md | help は完了、SKILL.md は暫定（help の差し込み） | src/help.ts、skills/voxelgraft/SKILL.md |
 | I9 | 版のコマンド | 未着手 | — |

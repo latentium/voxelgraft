@@ -56,6 +56,10 @@ EXPORTS
     html      1 ファイルの HTML（DIR/asset.name.html）。人間が見るためのもの。
               斜め、正面・右・背面・左・上・下、六面の並び（3 × 2）を、ボタンで切り替える
               （正面は z の大きい側）
+    vox       MagicaVoxel の .vox（DIR/asset.name.vox）。版 150、モデル一つ。
+              .vox は z が上なので、軸を入れ替えて書く。材質は 255 種まで。材質名は残らない
+    three     Three.js で .vox を表示する HTML（DIR/asset.name.three.html）。人間が見るためのもの。
+              .vox を中に埋め込み、Three.js は CDN から読む（ネットへの接続が要る）。ドラッグで回す
 
 RESULT
     {

@@ -56,6 +56,11 @@ voxelgraft（実行ごとに世界を構築し、終了後に破棄する）
 
 20. 配布は Claude Code のプラグインの形とし、CLI（bin/）と Skill（skills/）を同梱する
 
+### 書き出し
+
+21. 書き出しに vox（MagicaVoxel の .vox）と three（Three.js による表示）を加え、html は残す
+22. three は .vox を HTML に埋め込み、Three.js を CDN から読む。確認は人間による
+
 ## 到達状況
 
 | コミット | 内容 |
@@ -104,7 +109,7 @@ flowchart TD
 
 - 操作：Transform（移動・回転）、Mirror、Extrude 等（初期構想の操作命令による）
 - 検査：浮遊ボクセルの検出（連結性）
-- 書き出し：HTML 以外の形式
+- 書き出し：HTML、vox 以外の形式
 - 組み方の節によるセルの木の記述（X2）
 - Skill：造形の要点（形の作り方、重ねる順の使い方等）
 

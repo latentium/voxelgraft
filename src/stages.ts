@@ -9,6 +9,8 @@ import { SIG_ASSET, cargoOf } from "./cargo.ts";
 import type { AssetCargo, BlueprintCargo, PartCargo } from "./cargo.ts";
 import { applyOps, coordsOf, overlay } from "./voxels.ts";
 import { renderHtml } from "./html.ts";
+import { encodeVox } from "./vox.ts";
+import { renderThreeHtml } from "./three.ts";
 
 // 段から外へ知らせる記録（世界の動きには影響しない）。
 // 管は段の例外の理由を捨てるので、検査の問題の文は、ここに書く
@@ -59,11 +61,19 @@ export const makeInspectStage = (dsl: AssetDsl, report: Report): Stage => (v) =>
 export const makeExportStage = (dsl: AssetDsl, outDir: string, report: Report): Stage => (v) => {
   const c = cargoOf(v);
   if (c.kind !== "asset") return v;
-  if (dsl.assembly.export.includes("html")) {
-    mkdirSync(outDir, { recursive: true });
-    const file = join(outDir, `${c.name.replace(/[\/\\:*?"<>|]/g, "_")}.html`);
-    writeFileSync(file, renderHtml(c, dsl.asset.palette));
+  const kinds = dsl.assembly.export;
+  if (kinds.length === 0) return v;
+  mkdirSync(outDir, { recursive: true });
+  const base = join(outDir, c.name.replace(/[\/\\:*?"<>|]/g, "_"));
+  const write = (file: string, data: string | Uint8Array): void => {
+    writeFileSync(file, data);
     report.outputs.push(file);
+  };
+  if (kinds.includes("html")) write(`${base}.html`, renderHtml(c, dsl.asset.palette));
+  if (kinds.includes("vox") || kinds.includes("three")) {
+    const vox = encodeVox(c, dsl.asset.palette);
+    if (kinds.includes("vox")) write(`${base}.vox`, vox);
+    if (kinds.includes("three")) write(`${base}.three.html`, renderThreeHtml(c, vox));
   }
   return v;
 };

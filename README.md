@@ -30,7 +30,7 @@ Skill は依頼の内容から自動で呼ばれるほか、`/voxelgraft:voxelgr
 ## 今の範囲（M2）
 
 - check、build、help
-- 操作は fill と remove、検査は bounds と palette、書き出しは html
+- 操作は fill と remove、検査は bounds と palette、書き出しは html、vox（MagicaVoxel の .vox）と three（Three.js による表示）
 - Part どうしで座標が重なったら、asset.parts で後の Part が上書きする
 
 ## 仮のもの

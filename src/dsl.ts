@@ -23,7 +23,7 @@ export interface DslError {
 export type ParseResult = { ok: true; dsl: AssetDsl } | { ok: false; errors: DslError[] };
 
 export const INSPECTIONS = ["bounds", "palette"];
-export const EXPORTS = ["html"];
+export const EXPORTS = ["html", "vox", "three"];
 export const MAX_SIZE = 128; // asset.size の上限
 export const MAX_COORD = 127; // 操作の座標の上限
 

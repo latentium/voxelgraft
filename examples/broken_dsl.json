@@ -1,0 +1,8 @@
+{
+  "asset": { "name": "broken", "size": [8, 8, 8], "palette": { "stone": "#888888" }, "parts": ["a", "b"] },
+  "parts": {
+    "a": [{ "fill": { "from": [0, 0, 0], "to": [3, 3], "material": "stone" } }],
+    "c": []
+  },
+  "assembly": { "inspect": ["bounds", "shape"], "export": ["html"] }
+}

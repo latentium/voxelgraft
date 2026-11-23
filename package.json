@@ -1,0 +1,8 @@
+{
+  "name": "voxelgraft",
+  "version": "0.1.0",
+  "private": true,
+  "description": "対話でボクセルアセットを育てるための CLI",
+  "type": "module",
+  "bin": { "voxelgraft": "bin/voxelgraft" }
+}

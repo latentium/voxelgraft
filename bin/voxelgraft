@@ -1,0 +1,4 @@
+#!/bin/sh
+# VoxelGraft の起動の口。Node を警告なしで呼ぶ
+DIR="$(cd "$(dirname "$0")/.." && pwd)"
+exec node --experimental-transform-types --no-warnings "$DIR/src/cli.ts" "$@"

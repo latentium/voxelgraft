@@ -1,0 +1,8 @@
+{
+  "asset": { "name": "rock", "size": [6, 4, 6], "palette": { "stone": "#7a7a7a" }, "parts": ["body", "moss"] },
+  "parts": {
+    "body": [{ "fill": { "from": [0, 0, 0], "to": [5, 3, 5], "material": "stone" } }],
+    "moss": [{ "fill": { "from": [0, 4, 0], "to": [2, 4, 2], "material": "moss" } }]
+  },
+  "assembly": { "inspect": ["bounds", "palette"], "export": ["html"] }
+}

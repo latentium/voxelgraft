@@ -1,0 +1,45 @@
+{
+  "asset": {
+    "name": "treasure_chest",
+    "size": [16, 12, 11],
+    "palette": {
+      "wood": "#a8702f",
+      "frame": "#4b3621",
+      "gold": "#d4af37",
+      "keyhole": "#1b1b1b"
+    },
+    "parts": ["base", "lid", "frame", "lock"]
+  },
+  "parts": {
+    "base": [
+      { "fill": { "from": [0, 0, 0], "to": [15, 6, 9], "material": "wood" } },
+      { "remove": { "from": [1, 1, 1], "to": [14, 6, 8] } }
+    ],
+    "lid": [
+      { "fill": { "from": [0, 7, 0], "to": [15, 11, 9], "material": "wood" } }
+    ],
+    "frame": [
+      { "fill": { "from": [0, 0, 0], "to": [0, 11, 0], "material": "frame" } },
+      { "fill": { "from": [15, 0, 0], "to": [15, 11, 0], "material": "frame" } },
+      { "fill": { "from": [0, 0, 9], "to": [0, 11, 9], "material": "frame" } },
+      { "fill": { "from": [15, 0, 9], "to": [15, 11, 9], "material": "frame" } },
+      { "fill": { "from": [0, 0, 0], "to": [15, 0, 0], "material": "frame" } },
+      { "fill": { "from": [0, 0, 9], "to": [15, 0, 9], "material": "frame" } },
+      { "fill": { "from": [0, 0, 0], "to": [0, 0, 9], "material": "frame" } },
+      { "fill": { "from": [15, 0, 0], "to": [15, 0, 9], "material": "frame" } },
+      { "fill": { "from": [0, 11, 0], "to": [15, 11, 0], "material": "frame" } },
+      { "fill": { "from": [0, 11, 9], "to": [15, 11, 9], "material": "frame" } },
+      { "fill": { "from": [0, 11, 0], "to": [0, 11, 9], "material": "frame" } },
+      { "fill": { "from": [15, 11, 0], "to": [15, 11, 9], "material": "frame" } },
+      { "fill": { "from": [0, 6, 9], "to": [15, 7, 9], "material": "frame" } },
+      { "fill": { "from": [0, 6, 0], "to": [15, 7, 0], "material": "frame" } },
+      { "fill": { "from": [0, 6, 0], "to": [0, 7, 9], "material": "frame" } },
+      { "fill": { "from": [15, 6, 0], "to": [15, 7, 9], "material": "frame" } }
+    ],
+    "lock": [
+      { "fill": { "from": [6, 5, 10], "to": [9, 8, 10], "material": "gold" } },
+      { "fill": { "from": [7, 6, 10], "to": [8, 6, 10], "material": "keyhole" } }
+    ]
+  },
+  "assembly": { "inspect": ["bounds", "palette"], "export": ["html"] }
+}

@@ -4,5 +4,14 @@
   "private": true,
   "description": "対話でボクセルアセットを育てるための CLI",
   "type": "module",
-  "bin": { "voxelgraft": "bin/voxelgraft" }
+  "bin": {
+    "voxelgraft": "bin/voxelgraft"
+  },
+  "scripts": {
+    "typecheck": "tsc -p ."
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^7.0.2"
+  }
 }

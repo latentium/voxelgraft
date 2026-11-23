@@ -1,0 +1,82 @@
+{
+  "asset": {
+    "name": "calico_cat_hd",
+    "size": [24, 32, 42],
+    "palette": {
+      "white": "#f4f1ea",
+      "orange": "#e08a3c",
+      "black": "#2b2522",
+      "pink": "#e9a3a8",
+      "eye": "#7fbf3f"
+    },
+    "parts": ["legs", "body", "tail", "head", "ears", "patches", "face"]
+  },
+  "parts": {
+    "legs": [
+      { "fill": { "from": [7, 0, 27], "to": [10, 7, 30], "material": "white" } },
+      { "fill": { "from": [13, 0, 27], "to": [16, 7, 30], "material": "white" } },
+      { "fill": { "from": [7, 0, 7], "to": [10, 7, 10], "material": "white" } },
+      { "fill": { "from": [13, 0, 7], "to": [16, 7, 10], "material": "white" } }
+    ],
+    "body": [
+      { "fill": { "from": [4, 10, 6], "to": [19, 15, 31], "material": "white" } },
+      { "fill": { "from": [5, 9, 6], "to": [18, 9, 31], "material": "white" } },
+      { "fill": { "from": [5, 16, 6], "to": [18, 16, 31], "material": "white" } },
+      { "fill": { "from": [7, 8, 6], "to": [16, 8, 31], "material": "white" } },
+      { "fill": { "from": [7, 17, 6], "to": [16, 17, 31], "material": "white" } },
+      { "fill": { "from": [5, 9, 5], "to": [18, 16, 5], "material": "white" } },
+      { "fill": { "from": [5, 9, 32], "to": [18, 16, 32], "material": "white" } },
+      { "fill": { "from": [7, 10, 4], "to": [16, 15, 4], "material": "white" } },
+      { "fill": { "from": [7, 10, 33], "to": [16, 15, 33], "material": "white" } }
+    ],
+    "tail": [
+      { "fill": { "from": [10, 14, 1], "to": [13, 16, 3], "material": "black" } },
+      { "fill": { "from": [10, 17, 0], "to": [13, 22, 2], "material": "black" } },
+      { "fill": { "from": [10, 23, 0], "to": [13, 26, 1], "material": "black" } },
+      { "fill": { "from": [11, 27, 0], "to": [12, 28, 1], "material": "orange" } }
+    ],
+    "head": [
+      { "fill": { "from": [4, 17, 31], "to": [19, 26, 38], "material": "white" } },
+      { "fill": { "from": [5, 16, 31], "to": [18, 16, 38], "material": "white" } },
+      { "fill": { "from": [5, 27, 31], "to": [18, 27, 38], "material": "white" } },
+      { "fill": { "from": [5, 17, 30], "to": [18, 26, 30], "material": "white" } },
+      { "fill": { "from": [5, 17, 39], "to": [18, 26, 39], "material": "white" } },
+      { "fill": { "from": [8, 17, 40], "to": [15, 20, 40], "material": "white" } }
+    ],
+    "ears": [
+      { "fill": { "from": [5, 28, 34], "to": [9, 29, 35], "material": "orange" } },
+      { "fill": { "from": [6, 30, 34], "to": [8, 30, 35], "material": "orange" } },
+      { "fill": { "from": [6, 31, 34], "to": [7, 31, 35], "material": "orange" } },
+      { "fill": { "from": [14, 28, 34], "to": [18, 29, 35], "material": "black" } },
+      { "fill": { "from": [15, 30, 34], "to": [17, 30, 35], "material": "black" } },
+      { "fill": { "from": [16, 31, 34], "to": [17, 31, 35], "material": "black" } }
+    ],
+    "patches": [
+      { "fill": { "from": [5, 24, 31], "to": [11, 27, 38], "material": "orange" } },
+      { "fill": { "from": [5, 24, 39], "to": [11, 26, 39], "material": "orange" } },
+      { "fill": { "from": [12, 25, 31], "to": [18, 27, 38], "material": "black" } },
+      { "fill": { "from": [12, 25, 39], "to": [18, 26, 39], "material": "black" } },
+      { "fill": { "from": [4, 14, 18], "to": [13, 15, 29], "material": "orange" } },
+      { "fill": { "from": [5, 16, 18], "to": [13, 16, 29], "material": "orange" } },
+      { "fill": { "from": [7, 17, 18], "to": [13, 17, 29], "material": "orange" } },
+      { "fill": { "from": [12, 12, 6], "to": [19, 15, 17], "material": "black" } },
+      { "fill": { "from": [12, 16, 6], "to": [18, 16, 17], "material": "black" } },
+      { "fill": { "from": [12, 17, 6], "to": [16, 17, 17], "material": "black" } },
+      { "fill": { "from": [4, 10, 8], "to": [4, 15, 15], "material": "orange" } },
+      { "fill": { "from": [19, 10, 22], "to": [19, 15, 27], "material": "black" } }
+    ],
+    "face": [
+      { "fill": { "from": [6, 22, 39], "to": [9, 24, 39], "material": "eye" } },
+      { "fill": { "from": [8, 22, 39], "to": [8, 24, 39], "material": "black" } },
+      { "fill": { "from": [6, 24, 39], "to": [6, 24, 39], "material": "white" } },
+      { "fill": { "from": [14, 22, 39], "to": [17, 24, 39], "material": "eye" } },
+      { "fill": { "from": [15, 22, 39], "to": [15, 24, 39], "material": "black" } },
+      { "fill": { "from": [17, 24, 39], "to": [17, 24, 39], "material": "white" } },
+      { "fill": { "from": [11, 19, 41], "to": [12, 20, 41], "material": "pink" } },
+      { "fill": { "from": [11, 18, 40], "to": [12, 18, 40], "material": "black" } },
+      { "fill": { "from": [6, 28, 35], "to": [8, 29, 35], "material": "pink" } },
+      { "fill": { "from": [15, 28, 35], "to": [17, 29, 35], "material": "pink" } }
+    ]
+  },
+  "assembly": { "inspect": ["bounds", "palette"], "export": ["html"] }
+}

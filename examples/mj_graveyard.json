@@ -1,0 +1,112 @@
+{
+  "asset": {
+    "name": "mj_graveyard",
+    "size": [32, 28, 24],
+    "palette": {
+      "grass": "#2e5d34", "dirt": "#4a3524", "mud": "#5b4332",
+      "stone": "#8a8f98", "dark": "#3a3d44", "wood": "#6b4423", "bark": "#4b3a2a",
+      "iron": "#2b2b2f", "moon": "#f2e8b0", "black": "#15151a", "red": "#c1121f",
+      "skin": "#8d5a3b", "white": "#f4f4f4", "mouth": "#5a1a1a", "zgreen": "#7aa35a"
+    },
+    "parts": ["ground", "fence", "tree", "stones", "zombies", "legs", "torso", "arms", "head", "sky"]
+  },
+  "parts": {
+    "ground": [
+      { "fill": { "from": [0, 0, 0], "to": [31, 0, 23], "material": "dirt" } },
+      { "fill": { "from": [0, 1, 0], "to": [31, 1, 23], "material": "grass" } },
+      { "fill": { "from": [11, 1, 8], "to": [21, 1, 17], "material": "mud" } }
+    ],
+    "fence": [
+      { "fill": { "from": [0, 3, 0], "to": [31, 3, 0], "material": "iron" } },
+      { "fill": { "from": [0, 5, 0], "to": [31, 5, 0], "material": "iron" } },
+      { "fill": { "from": [0, 2, 0], "to": [0, 6, 0], "material": "iron" } },
+      { "fill": { "from": [4, 2, 0], "to": [4, 6, 0], "material": "iron" } },
+      { "fill": { "from": [8, 2, 0], "to": [8, 6, 0], "material": "iron" } },
+      { "fill": { "from": [12, 2, 0], "to": [12, 6, 0], "material": "iron" } },
+      { "fill": { "from": [16, 2, 0], "to": [16, 6, 0], "material": "iron" } },
+      { "fill": { "from": [20, 2, 0], "to": [20, 6, 0], "material": "iron" } },
+      { "fill": { "from": [24, 2, 0], "to": [24, 6, 0], "material": "iron" } },
+      { "fill": { "from": [28, 2, 0], "to": [28, 6, 0], "material": "iron" } },
+      { "fill": { "from": [31, 2, 0], "to": [31, 6, 0], "material": "iron" } }
+    ],
+    "tree": [
+      { "fill": { "from": [2, 2, 2], "to": [3, 13, 3], "material": "bark" } },
+      { "fill": { "from": [0, 10, 2], "to": [1, 10, 3], "material": "bark" } },
+      { "fill": { "from": [0, 11, 2], "to": [0, 12, 3], "material": "bark" } },
+      { "fill": { "from": [4, 12, 2], "to": [6, 12, 3], "material": "bark" } },
+      { "fill": { "from": [6, 13, 2], "to": [6, 15, 3], "material": "bark" } },
+      { "fill": { "from": [2, 14, 2], "to": [3, 15, 3], "material": "bark" } }
+    ],
+    "stones": [
+      { "fill": { "from": [3, 2, 7], "to": [5, 7, 8], "material": "stone" } },
+      { "fill": { "from": [4, 8, 7], "to": [4, 8, 8], "material": "stone" } },
+      { "fill": { "from": [4, 3, 8], "to": [4, 6, 8], "material": "dark" } },
+      { "fill": { "from": [3, 5, 8], "to": [5, 5, 8], "material": "dark" } },
+      { "fill": { "from": [24, 2, 6], "to": [28, 6, 7], "material": "stone" } },
+      { "fill": { "from": [25, 7, 6], "to": [27, 7, 7], "material": "stone" } },
+      { "fill": { "from": [26, 3, 7], "to": [26, 5, 7], "material": "dark" } },
+      { "fill": { "from": [25, 5, 7], "to": [27, 5, 7], "material": "dark" } },
+      { "fill": { "from": [6, 2, 16], "to": [6, 7, 16], "material": "wood" } },
+      { "fill": { "from": [5, 6, 16], "to": [7, 6, 16], "material": "wood" } },
+      { "fill": { "from": [26, 2, 17], "to": [28, 5, 18], "material": "stone" } },
+      { "fill": { "from": [27, 6, 17], "to": [27, 6, 18], "material": "stone" } },
+      { "fill": { "from": [12, 2, 12], "to": [12, 2, 12], "material": "stone" } }
+    ],
+    "zombies": [
+      { "fill": { "from": [11, 2, 3], "to": [13, 2, 5], "material": "mud" } },
+      { "fill": { "from": [12, 3, 4], "to": [12, 5, 4], "material": "zgreen" } },
+      { "fill": { "from": [11, 6, 4], "to": [13, 6, 4], "material": "zgreen" } },
+      { "fill": { "from": [11, 7, 4], "to": [11, 7, 4], "material": "zgreen" } },
+      { "fill": { "from": [13, 7, 4], "to": [13, 7, 4], "material": "zgreen" } },
+      { "fill": { "from": [19, 2, 4], "to": [21, 2, 6], "material": "mud" } },
+      { "fill": { "from": [20, 3, 5], "to": [20, 4, 5], "material": "zgreen" } },
+      { "fill": { "from": [19, 5, 5], "to": [21, 5, 5], "material": "zgreen" } },
+      { "fill": { "from": [19, 6, 5], "to": [19, 6, 5], "material": "zgreen" } },
+      { "fill": { "from": [21, 6, 5], "to": [21, 6, 5], "material": "zgreen" } }
+    ],
+    "legs": [
+      { "fill": { "from": [14, 2, 11], "to": [15, 2, 14], "material": "black" } },
+      { "fill": { "from": [14, 3, 12], "to": [15, 3, 13], "material": "white" } },
+      { "fill": { "from": [14, 4, 12], "to": [15, 8, 13], "material": "black" } },
+      { "fill": { "from": [14, 9, 11], "to": [18, 9, 13], "material": "black" } },
+      { "fill": { "from": [17, 8, 12], "to": [18, 8, 15], "material": "black" } },
+      { "fill": { "from": [17, 6, 14], "to": [18, 7, 15], "material": "black" } },
+      { "fill": { "from": [17, 5, 14], "to": [18, 5, 15], "material": "white" } },
+      { "fill": { "from": [17, 4, 14], "to": [18, 4, 17], "material": "black" } }
+    ],
+    "torso": [
+      { "fill": { "from": [14, 10, 11], "to": [18, 10, 13], "material": "black" } },
+      { "fill": { "from": [14, 11, 11], "to": [18, 15, 13], "material": "red" } },
+      { "fill": { "from": [16, 11, 13], "to": [16, 15, 13], "material": "black" } },
+      { "fill": { "from": [15, 16, 12], "to": [17, 16, 13], "material": "skin" } }
+    ],
+    "arms": [
+      { "fill": { "from": [13, 14, 11], "to": [13, 15, 15], "material": "red" } },
+      { "fill": { "from": [13, 14, 16], "to": [13, 15, 17], "material": "skin" } },
+      { "fill": { "from": [19, 15, 11], "to": [19, 15, 13], "material": "red" } },
+      { "fill": { "from": [19, 16, 13], "to": [19, 16, 15], "material": "red" } },
+      { "fill": { "from": [19, 16, 16], "to": [19, 17, 16], "material": "skin" } }
+    ],
+    "head": [
+      { "fill": { "from": [14, 17, 11], "to": [18, 19, 14], "material": "skin" } },
+      { "fill": { "from": [14, 20, 11], "to": [18, 21, 14], "material": "black" } },
+      { "fill": { "from": [14, 17, 11], "to": [18, 19, 11], "material": "black" } },
+      { "fill": { "from": [14, 17, 11], "to": [14, 19, 12], "material": "black" } },
+      { "fill": { "from": [18, 17, 11], "to": [18, 19, 12], "material": "black" } },
+      { "fill": { "from": [15, 19, 14], "to": [15, 19, 14], "material": "black" } },
+      { "fill": { "from": [17, 19, 14], "to": [17, 19, 14], "material": "black" } },
+      { "fill": { "from": [16, 17, 14], "to": [16, 17, 14], "material": "mouth" } }
+    ],
+    "sky": [
+      { "fill": { "from": [23, 20, 0], "to": [25, 24, 0], "material": "moon" } },
+      { "fill": { "from": [22, 21, 0], "to": [26, 23, 0], "material": "moon" } },
+      { "fill": { "from": [4, 18, 4], "to": [4, 18, 4], "material": "black" } },
+      { "fill": { "from": [5, 19, 4], "to": [5, 19, 4], "material": "black" } },
+      { "fill": { "from": [6, 18, 4], "to": [6, 18, 4], "material": "black" } },
+      { "fill": { "from": [10, 22, 6], "to": [10, 22, 6], "material": "black" } },
+      { "fill": { "from": [11, 23, 6], "to": [11, 23, 6], "material": "black" } },
+      { "fill": { "from": [12, 22, 6], "to": [12, 22, 6], "material": "black" } }
+    ]
+  },
+  "assembly": { "inspect": ["bounds", "palette"], "export": ["html"] }
+}

@@ -1,0 +1,189 @@
+{
+  "asset": {
+    "name": "hero_vs_chicken",
+    "size": [40, 24, 12],
+    "palette": {
+      "grass": "#5aa83c",
+      "grass2": "#4d9533",
+      "tuft": "#3f8a2b",
+      "tuft_light": "#7ccf55",
+      "bloom_pink": "#ff7eb6",
+      "bloom_yellow": "#ffd93b",
+      "skin": "#f2c9a0",
+      "steel": "#b8c0cc",
+      "plume": "#d63a3a",
+      "tunic": "#2f5fbf",
+      "cape": "#c62828",
+      "cape_dark": "#9b1c1c",
+      "pants": "#4a3b2a",
+      "boot": "#2b1d14",
+      "belt": "#8b5a2b",
+      "gold": "#f2c230",
+      "blade": "#e8eef5",
+      "leather": "#6b4a2f",
+      "eye": "#1a1a1a",
+      "shield": "#3a7bd5",
+      "feather": "#f7f3e8",
+      "wing": "#e2d9c2",
+      "tailc": "#7a5230",
+      "comb": "#e53935",
+      "beak": "#f0a020",
+      "leg": "#f0b429",
+      "spark": "#ffe14d",
+      "alert": "#ff3b30"
+    },
+    "parts": [
+      "ground", "tufts", "cape", "boots", "legs", "torso", "head", "helmet",
+      "sword_arm", "sword", "shield",
+      "c_legs", "c_body", "c_wings", "c_head", "c_comb", "c_tail",
+      "fx"
+    ]
+  },
+  "parts": {
+    "ground": [
+      { "fill": { "from": [0, 0, 0], "to": [39, 0, 11], "material": "grass" } },
+      { "fill": { "from": [0, 0, 0], "to": [2, 0, 11], "material": "grass2" } },
+      { "fill": { "from": [6, 0, 0], "to": [8, 0, 11], "material": "grass2" } },
+      { "fill": { "from": [12, 0, 0], "to": [14, 0, 11], "material": "grass2" } },
+      { "fill": { "from": [18, 0, 0], "to": [20, 0, 11], "material": "grass2" } },
+      { "fill": { "from": [24, 0, 0], "to": [26, 0, 11], "material": "grass2" } },
+      { "fill": { "from": [30, 0, 0], "to": [32, 0, 11], "material": "grass2" } },
+      { "fill": { "from": [36, 0, 0], "to": [38, 0, 11], "material": "grass2" } },
+      { "fill": { "from": [2, 1, 10], "to": [2, 1, 10], "material": "bloom_pink" } },
+      { "fill": { "from": [15, 1, 1], "to": [15, 1, 1], "material": "bloom_yellow" } },
+      { "fill": { "from": [19, 1, 10], "to": [19, 1, 10], "material": "bloom_pink" } },
+      { "fill": { "from": [37, 1, 9], "to": [37, 1, 9], "material": "bloom_yellow" } },
+      { "fill": { "from": [38, 1, 2], "to": [38, 1, 2], "material": "bloom_pink" } }
+    ],
+    "tufts": [
+      { "fill": { "from": [0, 1, 1], "to": [0, 3, 1], "material": "tuft" } },
+      { "fill": { "from": [1, 1, 1], "to": [1, 2, 1], "material": "tuft_light" } },
+      { "fill": { "from": [2, 1, 1], "to": [2, 4, 1], "material": "tuft" } },
+      { "fill": { "from": [4, 1, 2], "to": [4, 2, 2], "material": "tuft_light" } },
+      { "fill": { "from": [5, 1, 2], "to": [5, 4, 2], "material": "tuft" } },
+      { "fill": { "from": [6, 1, 2], "to": [6, 3, 2], "material": "tuft_light" } },
+      { "fill": { "from": [9, 1, 0], "to": [9, 3, 0], "material": "tuft" } },
+      { "fill": { "from": [10, 1, 0], "to": [10, 4, 0], "material": "tuft_light" } },
+      { "fill": { "from": [11, 1, 0], "to": [11, 2, 0], "material": "tuft" } },
+      { "fill": { "from": [17, 1, 1], "to": [17, 3, 1], "material": "tuft_light" } },
+      { "fill": { "from": [18, 1, 1], "to": [18, 4, 1], "material": "tuft" } },
+      { "fill": { "from": [19, 1, 1], "to": [19, 2, 1], "material": "tuft_light" } },
+      { "fill": { "from": [21, 1, 0], "to": [21, 2, 0], "material": "tuft" } },
+      { "fill": { "from": [22, 1, 0], "to": [22, 4, 0], "material": "tuft_light" } },
+      { "fill": { "from": [23, 1, 0], "to": [23, 3, 0], "material": "tuft" } },
+      { "fill": { "from": [26, 1, 2], "to": [26, 3, 2], "material": "tuft" } },
+      { "fill": { "from": [27, 1, 2], "to": [27, 2, 2], "material": "tuft_light" } },
+      { "fill": { "from": [28, 1, 2], "to": [28, 4, 2], "material": "tuft" } },
+      { "fill": { "from": [30, 1, 1], "to": [30, 2, 1], "material": "tuft_light" } },
+      { "fill": { "from": [31, 1, 1], "to": [31, 4, 1], "material": "tuft" } },
+      { "fill": { "from": [32, 1, 1], "to": [32, 3, 1], "material": "tuft_light" } },
+      { "fill": { "from": [35, 1, 2], "to": [35, 3, 2], "material": "tuft" } },
+      { "fill": { "from": [36, 1, 2], "to": [36, 4, 2], "material": "tuft_light" } },
+      { "fill": { "from": [37, 1, 2], "to": [37, 2, 2], "material": "tuft" } }
+    ],
+    "cape": [
+      { "fill": { "from": [6, 5, 3], "to": [6, 11, 8], "material": "cape" } },
+      { "fill": { "from": [5, 4, 3], "to": [5, 10, 8], "material": "cape" } },
+      { "fill": { "from": [4, 3, 3], "to": [4, 8, 8], "material": "cape_dark" } },
+      { "fill": { "from": [3, 3, 4], "to": [3, 6, 7], "material": "cape_dark" } },
+      { "fill": { "from": [2, 3, 4], "to": [2, 4, 7], "material": "cape_dark" } }
+    ],
+    "boots": [
+      { "fill": { "from": [6, 1, 3], "to": [8, 2, 5], "material": "boot" } },
+      { "fill": { "from": [10, 1, 6], "to": [12, 2, 8], "material": "boot" } }
+    ],
+    "legs": [
+      { "fill": { "from": [6, 3, 3], "to": [7, 5, 5], "material": "pants" } },
+      { "fill": { "from": [10, 3, 6], "to": [11, 5, 8], "material": "pants" } },
+      { "fill": { "from": [7, 5, 3], "to": [10, 5, 8], "material": "pants" } }
+    ],
+    "torso": [
+      { "fill": { "from": [7, 6, 3], "to": [10, 6, 8], "material": "belt" } },
+      { "fill": { "from": [7, 7, 3], "to": [10, 11, 8], "material": "tunic" } },
+      { "fill": { "from": [10, 6, 5], "to": [10, 6, 6], "material": "gold" } },
+      { "fill": { "from": [8, 7, 8], "to": [9, 8, 8], "material": "gold" } }
+    ],
+    "head": [
+      { "fill": { "from": [7, 12, 4], "to": [10, 16, 7], "material": "skin" } },
+      { "fill": { "from": [11, 13, 5], "to": [11, 13, 6], "material": "skin" } },
+      { "fill": { "from": [10, 14, 4], "to": [10, 14, 4], "material": "eye" } },
+      { "fill": { "from": [10, 14, 7], "to": [10, 14, 7], "material": "eye" } }
+    ],
+    "helmet": [
+      { "fill": { "from": [6, 15, 3], "to": [10, 16, 8], "material": "steel" } },
+      { "fill": { "from": [6, 12, 3], "to": [6, 14, 8], "material": "steel" } },
+      { "fill": { "from": [11, 15, 4], "to": [11, 16, 7], "material": "steel" } },
+      { "fill": { "from": [6, 17, 5], "to": [10, 17, 6], "material": "plume" } },
+      { "fill": { "from": [5, 18, 5], "to": [6, 18, 6], "material": "plume" } },
+      { "fill": { "from": [4, 18, 5], "to": [4, 19, 6], "material": "plume" } }
+    ],
+    "sword_arm": [
+      { "fill": { "from": [8, 9, 9], "to": [10, 10, 9], "material": "tunic" } },
+      { "fill": { "from": [11, 9, 9], "to": [11, 10, 9], "material": "skin" } }
+    ],
+    "sword": [
+      { "fill": { "from": [11, 9, 8], "to": [11, 10, 8], "material": "leather" } },
+      { "fill": { "from": [12, 8, 8], "to": [12, 11, 8], "material": "gold" } },
+      { "fill": { "from": [12, 9, 7], "to": [12, 10, 9], "material": "gold" } },
+      { "fill": { "from": [13, 9, 8], "to": [19, 10, 8], "material": "blade" } },
+      { "fill": { "from": [20, 10, 8], "to": [20, 10, 8], "material": "blade" } }
+    ],
+    "shield": [
+      { "fill": { "from": [8, 9, 2], "to": [10, 10, 2], "material": "tunic" } },
+      { "fill": { "from": [11, 6, 0], "to": [11, 11, 2], "material": "shield" } },
+      { "fill": { "from": [11, 6, 0], "to": [11, 6, 2], "material": "steel" } },
+      { "fill": { "from": [11, 11, 0], "to": [11, 11, 2], "material": "steel" } },
+      { "fill": { "from": [11, 8, 1], "to": [11, 9, 1], "material": "gold" } }
+    ],
+    "c_legs": [
+      { "fill": { "from": [27, 1, 9], "to": [27, 3, 9], "material": "leg" } },
+      { "fill": { "from": [25, 1, 9], "to": [26, 1, 9], "material": "leg" } },
+      { "fill": { "from": [31, 1, 6], "to": [31, 3, 6], "material": "leg" } },
+      { "fill": { "from": [29, 1, 6], "to": [30, 1, 6], "material": "leg" } }
+    ],
+    "c_body": [
+      { "fill": { "from": [27, 4, 6], "to": [33, 9, 9], "material": "feather" } },
+      { "fill": { "from": [26, 5, 6], "to": [26, 9, 9], "material": "feather" } },
+      { "fill": { "from": [25, 6, 6], "to": [25, 8, 9], "material": "feather" } },
+      { "remove": { "from": [27, 4, 6], "to": [27, 4, 9] } },
+      { "remove": { "from": [33, 4, 6], "to": [33, 4, 9] } }
+    ],
+    "c_wings": [
+      { "fill": { "from": [29, 6, 10], "to": [32, 8, 10], "material": "wing" } },
+      { "fill": { "from": [30, 5, 10], "to": [31, 5, 10], "material": "wing" } },
+      { "fill": { "from": [32, 9, 10], "to": [33, 9, 10], "material": "wing" } },
+      { "fill": { "from": [29, 6, 5], "to": [32, 8, 5], "material": "wing" } },
+      { "fill": { "from": [30, 5, 5], "to": [31, 5, 5], "material": "wing" } },
+      { "fill": { "from": [32, 9, 5], "to": [33, 9, 5], "material": "wing" } }
+    ],
+    "c_head": [
+      { "fill": { "from": [24, 10, 6], "to": [27, 13, 9], "material": "feather" } },
+      { "fill": { "from": [22, 11, 7], "to": [23, 12, 8], "material": "beak" } },
+      { "fill": { "from": [23, 9, 7], "to": [23, 10, 8], "material": "comb" } },
+      { "fill": { "from": [24, 12, 9], "to": [24, 12, 9], "material": "eye" } },
+      { "fill": { "from": [24, 12, 6], "to": [24, 12, 6], "material": "eye" } },
+      { "fill": { "from": [25, 13, 9], "to": [25, 13, 9], "material": "eye" } },
+      { "fill": { "from": [25, 13, 6], "to": [25, 13, 6], "material": "eye" } }
+    ],
+    "c_comb": [
+      { "fill": { "from": [24, 14, 7], "to": [27, 14, 8], "material": "comb" } },
+      { "fill": { "from": [24, 15, 7], "to": [24, 15, 8], "material": "comb" } },
+      { "fill": { "from": [25, 15, 7], "to": [25, 16, 8], "material": "comb" } },
+      { "fill": { "from": [26, 15, 7], "to": [26, 15, 8], "material": "comb" } }
+    ],
+    "c_tail": [
+      { "fill": { "from": [34, 6, 6], "to": [34, 10, 9], "material": "feather" } },
+      { "fill": { "from": [35, 8, 6], "to": [35, 13, 9], "material": "tailc" } },
+      { "fill": { "from": [36, 10, 7], "to": [36, 14, 8], "material": "tailc" } }
+    ],
+    "fx": [
+      { "fill": { "from": [19, 12, 8], "to": [19, 12, 8], "material": "spark" } },
+      { "fill": { "from": [21, 13, 8], "to": [21, 13, 8], "material": "spark" } },
+      { "fill": { "from": [20, 7, 8], "to": [20, 7, 8], "material": "spark" } },
+      { "fill": { "from": [18, 7, 8], "to": [18, 7, 8], "material": "spark" } },
+      { "fill": { "from": [25, 18, 7], "to": [26, 18, 8], "material": "alert" } },
+      { "fill": { "from": [25, 20, 7], "to": [26, 22, 8], "material": "alert" } }
+    ]
+  },
+  "assembly": { "inspect": ["bounds", "palette"], "export": ["html"] }
+}

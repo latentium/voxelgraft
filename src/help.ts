@@ -1,6 +1,6 @@
-// VoxelGraft：help の文（UNIX の help の形。SKILL.md にも写す予定：M4）
+// VoxelGraft：help の文（UNIX の help の形。SKILL.md に差し込む：M4）
 export const HELP = `NAME
-    voxelgraft - 対話でボクセルアセットを育てるための CLI（VoxelGraft）
+    voxelgraft - AIと対話しながらボクセルアセットを生成するためのCLI（VoxelGraft）
 
 SYNOPSIS
     voxelgraft check FILE

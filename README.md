@@ -1,6 +1,6 @@
 # VoxelGraft
 
-対話でボクセルアセットを育てるための CLI。Claude Code の Skills から使うことを想定している（Skills は M4 で用意する）。
+AIと対話しながらボクセルアセットを生成するためのエージェント向けSkills。
 
 標識（M1、X1 等）の解説は [docs/labels.md](docs/labels.md)、依存関係を含むロードマップは [docs/roadmap.md](docs/roadmap.md) に記す。
 
@@ -11,6 +11,12 @@
     bin/voxelgraft build examples/chest.json --out out
 
 Node v22 の `--experimental-transform-types` で、TypeScript をそのまま動かす。
+
+## プラグインとしての試用
+
+    claude --plugin-dir /path/to/voxelgraft
+
+bin/ が PATH に載り、Skill から `voxelgraft` の名で呼べる。オプション付きで起動する際の1回限りの読み込み
 
 ## 型の検査
 

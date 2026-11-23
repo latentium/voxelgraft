@@ -1,0 +1,5 @@
+{
+  "name": "voxelgraft",
+  "version": "0.1.0",
+  "description": "AIと対話しながらボクセルアセットを生成するためのCLIと、その Skill"
+}

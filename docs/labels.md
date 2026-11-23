@@ -29,7 +29,7 @@ VoxelGraft の設計および実装の考察で用いた標識を整理したも
 | M1 | `check`、`help`、結果（JSON）、終了コード | 完了 | efc8cd0 |
 | M2 | `build`。操作 fill / remove、検査 bounds / palette、組み立て、HTML の書き出し | 完了 | efc8cd0。型検査は 369c638 |
 | M3 | `save` / `versions` / `restore`。版への状態（通過 / 不通過 / 未検証）の記録 | 未着手 | I9、I10、X8 |
-| M4 | `skills/voxelgraft/SKILL.md`。help の写しおよび造形の要点 | 未着手 | I8、X7 |
+| M4 | `.claude-plugin/plugin.json` と `skills/voxelgraft/SKILL.md`。help の差し込み（記述は最小限） | 暫定 | I8。X7 で確かめる |
 
 ## X：実験
 
@@ -78,7 +78,7 @@ VoxelGraft の設計および実装の考察で用いた標識を整理したも
 ### X7：help のみによる DSL の記述 — 未着手
 
 - 問い：help の文のみを与えられたエージェントが、正しい DSL を記述できるか
-- 関連する実装：I8。M4 に先立って実施することで、SKILL.md に写す内容が確定する
+- 関連する実装：I8。SKILL.md は help を差し込むため、X7 の結果は Skill として渡る内容にそのまま及ぶ
 
 ### X8：版の保存と復元 — 未着手
 
@@ -96,7 +96,7 @@ VoxelGraft の設計および実装の考察で用いた標識を整理したも
 | I5 | 検査の段 | 部分実装（bounds / palette） | src/stages.ts |
 | I6 | 書き出しの段 | 部分実装（html） | src/stages.ts、src/html.ts |
 | I7 | 結果の形式 | 暫定（JSON） | src/result.ts |
-| I8 | help および SKILL.md | help は完了、SKILL.md は未着手 | src/help.ts |
+| I8 | help および SKILL.md | help は完了、SKILL.md は暫定（help の差し込み） | src/help.ts、skills/voxelgraft/SKILL.md |
 | I9 | 版のコマンド | 未着手 | — |
 | I10 | DSL のハッシュの算出方法 | 未決定 | — |
 | I11 | 起動の入口 | 完了（Node の警告を抑止） | bin/voxelgraft |

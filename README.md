@@ -2,6 +2,8 @@
 
 対話でボクセルアセットを育てるための CLI。Claude Code の Skills から使うことを想定している（Skills は M4 で用意する）。
 
+標識（M1、X1 等）の解説は [docs/labels.md](docs/labels.md)、依存関係を含むロードマップは [docs/roadmap.md](docs/roadmap.md) に記す。
+
 ## 実行の仕方
 
     bin/voxelgraft help

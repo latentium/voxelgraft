@@ -18,6 +18,8 @@ Node v22 の `--experimental-transform-types` で、TypeScript をそのまま�
 
 bin/ が PATH に載り、Skill から `voxelgraft` の名で呼べる。オプション付きで起動する際の1回限りの読み込み
 
+Skill は依頼の内容から自動で呼ばれるほか、`/voxelgraft:voxelgraft` で手動でも呼べる。
+
 ## 型の検査
 
     npm install

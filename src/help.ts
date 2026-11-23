@@ -53,7 +53,9 @@ INSPECTIONS
     検査に落ちた Part は組み立てに使われない。結果の parts に problems と route が出る。
 
 EXPORTS
-    html      1 ファイルの HTML（DIR/asset.name.html）。人間が見るためのもの
+    html      1 ファイルの HTML（DIR/asset.name.html）。人間が見るためのもの。
+              斜め、正面・右・背面・左・上・下、六面の並び（3 × 2）を、ボタンで切り替える
+              （正面は z の大きい側）
 
 RESULT
     {

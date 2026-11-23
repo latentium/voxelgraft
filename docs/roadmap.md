@@ -62,6 +62,12 @@ voxelgraft（実行ごとに世界を構築し、終了後に破棄する）
 |---|---|
 | efc8cd0 | M1・M2：check、build、help。DSL、世界、操作、検査、組み立て、HTML、例 |
 | 369c638 | 型の検査（typescript、@types/node、tsconfig.json） |
+| 16ee62a | 文書：標識の解説（docs/labels.md）とロードマップ（本書） |
+| b5ec304 | HTML：真正面から見た図（正面・右・背面・左・上・下）と六面の並び。面の境界の白線の解消 |
+| 6235715 | M4（暫定）：プラグインの構造（.claude-plugin/plugin.json）と SKILL.md（help の差し込み） |
+| 2dde3d9 | 例：サンプル 6 件（calico_cat ほか）と、全サンプルの HTML。意図的に失敗する例（broken_dsl、out_of_bounds）の削除 |
+| 96f7fa2 | README：Skill の手動の呼び出し |
+| d5f91a6 | X9：HTML からの DSL の復元（experiments/restore/） |
 
 ## 依存関係
 
@@ -107,5 +113,4 @@ flowchart TD
 - I10：DSL のハッシュの算出方法
 - 変更のない Part を毎回再構築するか、前の版の出力を再利用するか
 - JSON に注記を残す方法（エンジンが読まない欄の設置 / DSL の外への配置 / 設けない）
-- HTML の面の境界に生じる白線への対処の時期（X6 で扱いうる）
 - G7：役割のまとまりの名称と、コード上の Cell との重なり

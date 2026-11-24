@@ -1,2 +1,6 @@
+.claude/
+.commandcode/
+.pi/
+
 node_modules/
 out/

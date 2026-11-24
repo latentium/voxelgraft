@@ -25,7 +25,7 @@ const parseArgs = (rest: string[]) => {
       out = rest[++i];
       if (out === undefined) problems.push("--out には DIR が要る");
     } else if (a === "--help" || a === "-h") help = true;
-    else if (a.startsWith("-")) problems.push(`知らないオプション ${a}`);
+    else if (a.startsWith("-")) problems.push(`無効なオプション ${a}`);
     else if (file === undefined) file = a;
     else problems.push(`余分な引数 ${a}`);
   }
@@ -39,7 +39,7 @@ const main = async (argv: string[]): Promise<void> => {
     return;
   }
   if (command !== "check" && command !== "build") {
-    print(usageResult(command, null, `知らないコマンド ${command}（voxelgraft help を見よ）`));
+    print(usageResult(command, null, `無効なコマンド ${command}（「voxelgraft help」を参照）`));
     return;
   }
   const { file, out, help, problems } = parseArgs(rest);

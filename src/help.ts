@@ -73,12 +73,12 @@ RESULT
       "asset":   { "name": "chest", "size": [16, 12, 10], "voxels": 1040 } | null,
       "outputs": ["out/chest.html"]
     }
-    errors は DSL の誤り。path は DSL の中の場所。
+    errors は DSL のエラー。path は DSL の中の場所。
 
 EXIT STATUS
     0   成功
-    1   DSL の誤り、検査に落ちた、組み立てられなかった、書き出しに失敗した、時間切れ
-    2   使い方の誤り（知らないコマンドやオプション、FILE が無い、読めない）
+    1   DSL のエラー、検査に落ちた、組み立てられなかった、書き出しに失敗した、時間切れ
+    2   使い方のエラー（無効なコマンドやオプション、FILE が無い、読めない）
 
 EXAMPLES
     voxelgraft check examples/chest.json

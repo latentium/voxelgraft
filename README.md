@@ -6,7 +6,7 @@
 
 開発はまだ始まったばかりで、最低限の機能しかありません。
 
-AIと対話しながらボクセルアセットを生成するためのエージェント向けSkills。
+エージェントでAIと対話しながらボクセルアセットを生成するためのSkills。
 Claude Codeでの使用に最適化。Command Code、Antigravity CLI、Piでも動作することは確認。
 ただし、Claude Code以外ではコマンドパスの自動探索処理が入るため、起動時のトークン消費がやや多くなる。
 
@@ -54,7 +54,7 @@ HTMLをダウンロードし、ブラウザで開くことでサンプルの動�
 
     claude --plugin-dir /path/to/voxelgraft
 
-bin/ が PATH に入り、Skill から `voxelgraft` の名で実行可能となる。このオプション付きで起動する際の1回限りの読み込み。
+bin/ が PATH に入り、Skill から `voxelgraft` の名で実行可能。このオプションでは、起動する際の1回限りの読み込みとなる。
 
 Skill は依頼の内容(「voxelgraftでアセット制作」等、発動条件は厳しめ)から自動で呼ばれるほか、`/voxelgraft:voxelgraft` で手動実行も可
 

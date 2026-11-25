@@ -1,11 +1,46 @@
 # VoxelGraft
 
-> 状態: 開発初期(M1〜M2 完了、M3 以降は未着手、M4 は暫定)。開発が落ち着くまでは、npmへの公開、公式マーケットプレイスへの申請は行いません。
+![status](https://img.shields.io/badge/status-early_development-orange) [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+
+> 状態: 開発初期(M1〜M2 完了。M3 以降は未着手、M4 は暫定)。開発が落ち着くまでは、npmへの公開、公式マーケットプレイスへの申請は行いません。
+
+開発はまだ始まったばかりで、最低限の機能しかありません。
 
 AIと対話しながらボクセルアセットを生成するためのエージェント向けSkills。
-Claude Codeでの使用に最適化。Command Code、Antigravity CLI、Piでも最低限の動作は確認。
-ただし、Claude Code以外ではコマンドパスの自動探索処理が入るため、ややトークン消費が多くなる。
+Claude Codeでの使用に最適化。Command Code、Antigravity CLI、Piでも動作することは確認。
+ただし、Claude Code以外ではコマンドパスの自動探索処理が入るため、起動時のトークン消費がやや多くなる。
 
+## 出力例
+
+<p align="center">
+  <img src="docs/images/gemini-3-8-flash/walking_cat_v2_400_html.png" width="300" alt="歩く三毛猫のボクセルアセットの六面図(Canvas 2D 版)">
+  <img src="docs/images/gemini-3-8-flash/walking_cat_v2_400_three.png" width="300" alt="同じ猫を斜めから表示した立体図(Three.js 版)">
+</p>
+
+Gemini 3.8 Flash が VoxelGraft DSL を記述し、voxelgraft でHTMLへ書き出した例。
+左は Canvas 2D 版、右は Three.js 版。
+
+HTMLをダウンロードし、ブラウザで開くことでサンプルの動作確認可能: [Canvas 2D 版](examples/gemini-3-8-flash/walking_cat_v2.html) ・ [Three.js 版](examples/gemini-3-8-flash/walking_cat_v2.three.html)
+
+書き出しの形式は、現時点で次の3種類。
+
+- `html`: Canvas 2D 版。1ファイルのHTML。斜め、正面・右・背面・左・上・下、六面同時の並びをボタンで切り替え可
+- `vox`: MagicaVoxel の .vox ファイル
+- `three`: Three.js 版。.vox を埋め込んだHTML。回転とズーム可。Three.js を CDN から読む
+
+### その他の作例
+
+<p align="center">
+  <img src="docs/images/deepseek-v4-1-flash/loaf_calico_200_three.png" width="200" alt="香箱座りの猫(Three.js 版)">
+  <img src="docs/images/claude-sonnet-5-5/hero_vs_chicken_200_html.png" width="200" alt="鶏 vs 勇者の四面図(Canvas 2D 版)">
+  <img src="docs/images/claude-sonnet-5-5/dutch_windmill_v2_200_three.png" width="200" alt="オランダ風車(Three.js 版)">
+</p>
+
+| 作例 | モデル | 形式 | 大きさ | ボクセル数 |
+|---|---|---|---|--:|
+| [香箱座りの猫](examples/deepseek-v4-1-flash/loaf_calico.three.html) | DeepSeek V4.1 Flash | Three.js 版 | 24 × 21 × 30 | 4,190 |
+| [鶏 vs 勇者](examples/claude-sonnet-5-5/hero_vs_chicken.html) | Claude Sonnet 5.5 | Canvas 2D 版 | 40 × 24 × 12 | 1,543 |
+| [オランダ風車](examples/claude-sonnet-5-5/dutch_windmill_v2.three.html) | Claude Sonnet 5.5 | Three.js 版 | 72 × 70 × 56 | 32,346 |
 
 ## コマンド実行
 

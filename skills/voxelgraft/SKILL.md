@@ -1,8 +1,8 @@
 ---
 name: voxelgraft
-description: Builds and checks voxel 3D assets written in the VoxelGraft JSON DSL, and
-  exports an HTML file for a human to review. Use when the user asks to create, edit,
-  check, or build a voxel asset, or mentions VoxelGraft.
+description: Builds and checks voxel 3D assets written in the VoxelGraft JSON DSL,
+  and exports them in several formats, including HTML for a human to review.
+  Use only when the user mentions using VoxelGraft.
 allowed-tools: Bash(voxelgraft help)
 ---
 
@@ -61,8 +61,9 @@ This section explains what to display during S6 to S9.
   the user. If an item has no default value, do not fill it in with your
   own guess; use what the user says as the source.
 - When every item of the ASKING Checklist is filled in, check the box for
-  PLANNED and ask the user to approve the task plan (ask whether to proceed
-  with this plan, or whether there is anything to change).
+  PLANNED, show the filled-in ASKING Checklist as the task plan, and ask
+  the user to approve it (ask whether to proceed with this plan, or whether
+  there is anything to change).
 - If there is something to change, go back to ASKING and ask the user what
   to change.
 - When the user approves the task plan you presented in PLANNED, check
@@ -98,5 +99,5 @@ Generate it automatically from S8. Any display format is fine.
 
 S1 to S9 are identifiers of sequential steps.
 
-For steps other than making a 3D asset, the user's instructions take
+For work other than making a 3D asset, the user's instructions take
 priority.

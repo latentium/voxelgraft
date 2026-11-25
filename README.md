@@ -5,7 +5,7 @@
 > [!IMPORTANT]
 > 状態: 開発初期(M1〜M2 完了。M3 以降は未着手、M4 は暫定)。開発が落ち着くまでは、npmへの公開、公式マーケットプレイスへの申請は行いません。
 
-開発はまだ始まったばかりで、最低限の機能しかありません。
+開発はまだ始まったばかりで、最小限の機能しかありません。
 
 エージェントでAIと対話しながらボクセルアセットを生成するためのSkills。
 Claude Codeでの使用に最適化。Command Code、Antigravity CLI、Piでも動作することは確認。
@@ -29,7 +29,7 @@ Claude Codeでの使用に最適化。Command Code、Antigravity CLI、Piでも�
 Gemini 3.8 Flash が VoxelGraft DSL を記述し、voxelgraft でHTMLへ書き出した例。
 左は Canvas 2D 版、右は Three.js 版。
 
-HTMLをダウンロードし、ブラウザで開くことでサンプルの動作確認可能: [Canvas 2D 版](examples/gemini-3-8-flash/walking_cat_v2.html) ・ [Three.js 版](examples/gemini-3-8-flash/walking_cat_v2.three.html)
+HTMLをダウンロードし、ブラウザで開くことでサンプルが確認可能です: [Canvas 2D 版](examples/gemini-3-8-flash/walking_cat_v2.html) ・ [Three.js 版](examples/gemini-3-8-flash/walking_cat_v2.three.html)
 
 書き出しの形式は、現時点で次の3種類。
 

@@ -2,13 +2,22 @@
 
 ![status](https://img.shields.io/badge/status-early_development-orange) [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 
+> [!IMPORTANT]
 > 状態: 開発初期(M1〜M2 完了。M3 以降は未着手、M4 は暫定)。開発が落ち着くまでは、npmへの公開、公式マーケットプレイスへの申請は行いません。
 
 開発はまだ始まったばかりで、最低限の機能しかありません。
 
 エージェントでAIと対話しながらボクセルアセットを生成するためのSkills。
 Claude Codeでの使用に最適化。Command Code、Antigravity CLI、Piでも動作することは確認。
-ただし、Claude Code以外ではコマンドパスの自動探索処理が入るため、起動時のトークン消費がやや多くなる。
+ただし、Claude Code以外ではコマンドパスの自動探索処理が入るため、起動時のトークン消費がやや多くなります。
+
+## 使用方法
+
+お使いの環境でSkillsとして有効化してください(ハーネス単位の設定方法はいずれまとめます)。
+「VoxelGraftを使って、散歩している猫をボクセルで生成」等の曖昧な指示でもAIがそれなりのものを作ってくれます。作業用ディレクトリはきっちり確認してください(成果物が分散しないように)。
+
+> [!WARNING]
+> AIの予期せぬ動作を許容できない場合は、ハーネスで厳しめの制約をかけておいてください。環境の制約が緩めだと、AIは自分でサポートツールを作り始めます。その結果、成果物の質は上がりますが、トークン消費も増えます。
 
 ## 出力例
 
@@ -24,9 +33,9 @@ HTMLをダウンロードし、ブラウザで開くことでサンプルの動�
 
 書き出しの形式は、現時点で次の3種類。
 
-- `html`: Canvas 2D 版。1ファイルのHTML。斜め、正面・右・背面・左・上・下、六面同時の並びをボタンで切り替え可
-- `vox`: MagicaVoxel の .vox ファイル
-- `three`: Three.js 版。.vox を埋め込んだHTML。回転とズーム可。Three.js を CDN から読む
+- `html`: Canvas 2D 版。1ファイルのHTML。斜め、正面・右・背面・左・上・下、六面同時の並びをボタンで切り替え可能です。
+- `vox`: MagicaVoxel の .vox ファイルとして出力します。
+- `three`: Three.js 版。.vox を埋め込んだHTML。回転とズーム可。Three.js を CDN から読みます(オフライン環境で、そのままでは動かない)。
 
 ### その他の作例
 
@@ -48,17 +57,19 @@ HTMLをダウンロードし、ブラウザで開くことでサンプルの動�
     bin/voxelgraft check examples/chest.json
     bin/voxelgraft build examples/chest.json --out out
 
-> 現時点では Node v22 の `--experimental-transform-types` で、TypeScriptをそのまま動かす。
+> [!NOTE]
+> 現時点では Node v22 の `--experimental-transform-types` で、TypeScriptをそのまま動かします。
 
 ## Claude プラグインとしての試用
 
     claude --plugin-dir /path/to/voxelgraft
 
-bin/ が PATH に入り、Skill から `voxelgraft` の名で実行可能。このオプションでは、起動する際の1回限りの読み込みとなる。
+bin/ が PATH に入り、Skill から `voxelgraft` の名で実行可能。このオプションでは、起動する際の1回限りの読み込み。
 
-Skill は依頼の内容(「voxelgraftでアセット制作」等、発動条件は厳しめ)から自動で呼ばれるほか、`/voxelgraft:voxelgraft` で手動実行も可
+Skill は依頼の内容(「voxelgraftでアセット制作」等、発動条件は厳しめ)から自動で呼ばれるほか、`/voxelgraft:voxelgraft` で手動実行も可。
 
-> Skillsとして有効化しなくても、SKILL.mdの内容と`voxelgraft help`の出力をAIエージェントに読ませれば使用可能とする設計方針。
+> [!NOTE]
+> 設計方針として、Skillsとして有効化しなくても、SKILL.mdの内容と`voxelgraft help`の出力をAIに読ませれば使用可能な構造とします。
 
 ## ライセンス
 
